@@ -1,0 +1,51 @@
+.jquery-checkbox       {display: inline; font-size: 20px; line-height: 20px; cursor: pointer; cursor: hand;}
+.jquery-checkbox .mark {display: inline;}
+
+.jquery-checkbox img{vertical-align: middle; width: 23px; height: 18px;}
+.jquery-checkbox img{background: transparent url(../images/checkbox.gif) no-repeat;}
+
+.jquery-checkbox img{
+	background-position: 0px 0px;
+}
+.jquery-checkbox-hover img{
+	background-position: 0px 0px;
+}
+.jquery-checkbox-checked img{
+	background-position: 0px -18px;
+}
+.jquery-checkbox-checked .jquery-checkbox-hover img {
+	background-position: 0px -18px;
+}
+
+.jquery-checkbox-disabled img{
+	background-position: 0px -36px;
+}
+.jquery-checkbox-checked .jquery-checkbox-disabled img{
+	background-position: 0px -36px;
+}
+
+.jquery-radio-checkbox       {display: inline; font-size: 20px; line-height: 20px; cursor: pointer; cursor: hand;}
+.jquery-radio-checkbox .mark {display: inline;}
+
+.jquery-radio-checkbox img{vertical-align: middle; width: 20px; height: 20px; margin-right: 5px; margin-top: -2px; position: relative;}
+.jquery-radio-checkbox img{background: transparent url(../images/radio.gif) no-repeat;}
+
+.jquery-radio-checkbox img{
+	background-position: 0px 0px;
+}
+.jquery-radio-checkbox-hover img{
+	background-position: 0px 0px;
+}
+.jquery-radio-checkbox-checked img{
+	background-position: 0px -20px;
+}
+.jquery-radio-checkbox-checked .jquery-checkbox-hover img {
+	background-position: 0px -20px;
+}
+
+.jquery-radio-checkbox-disabled img{
+	background-position: 0px -40px;
+}
+.jquery-radio-checkbox-checked .jquery-checkbox-disabled img{
+	background-position: 0px -40px;
+}

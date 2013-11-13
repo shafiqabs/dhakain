@@ -1,0 +1,20 @@
+* html body {
+	behavior: url(styles/csshover.htc);
+}
+
+div {
+	zoom: 1;	
+}
+
+.header .top-li ul li a img{ background-position:left 2px; vertical-align: middle;}
+
+.top-navigation ul li.last-child {
+	padding: 0;
+	background-image: url("../images/navigation.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    float: left;
+	width:117px;
+    
+}
+

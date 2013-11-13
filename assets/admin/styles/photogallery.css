@@ -1,0 +1,227 @@
+
+#uploader-container {
+	width:	162px;
+	height: 27px;
+	margin: 0 0.25em;
+	/* move off screen so AdBlock Plus doesn't show it's little block icon */
+}
+
+#upload-save-warning {
+	margin: 2px 5px;
+	font-size: 0.7em;
+	color: #0080FF;
+	display: none;
+}
+
+#dlg-upload-file-name {
+    float: left;
+    height: 1.7em;
+    width: 280px;
+}
+#dlg-upload-file-progress {
+    float: left;
+    width: 45px;
+    text-align: right;
+}
+#dlg-upload-progress {
+    clear: both;
+    position: relative;
+	margin-top: 10px;
+    width: 100%;
+}
+#dlg-upload-progress-bar-bg {
+    height: 20px;
+    width: 100%;
+    background-color: #517EE7;
+    border: 1px solid #304369;
+}
+#dlg-upload-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 50%;
+    background-color: #2647A0;
+    z-index: 5;
+    border: 1px solid #304369;
+}
+#dlg-upload-progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 10;
+    line-height: 20px;
+    font-family: arial;
+}
+#dlg-upload-bytes {
+	float: left;
+	line-height: 24px;
+	font-size: 0.9em;
+	font-family: monotype;
+	width: 250px;
+}
+
+#images {
+	position: relative;
+	width: 550px;
+	float: left;
+}
+
+.order {
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 1.2em;
+	line-height: 1.2em;
+	padding: none !important;
+	border: none !important;
+	background-color: transparent !important;
+	color: #aaa !important;
+	bottom: 2px;
+	right: 2px;
+	z-index: 10;
+	text-align: right;
+}
+
+.image {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-width: 1px 0px;
+	position: relative;
+	margin: 8px 1px;
+	height: 85px;
+	width: 535px;
+}
+
+#images .image.deleted {
+	background-color: #fee !important;
+}
+
+#images .image.modified {
+	background-color: #ee8;
+}
+
+#images .image.new {
+	background-color: #efe;
+}
+
+.image-inner {
+	margin: 0px -1px;
+	border: 1px solid #ccc;
+	border-width: 0px 1px;
+	height: 85px;
+}
+
+.image-image {
+	width:	143px;
+	padding: 4px;
+	text-align: center;
+	float: left;
+}
+
+.image-image img {
+	border: 1px solid #777;
+}
+
+.image-data {
+	float: left;
+	padding: 5px;
+	width: 365px;
+}
+
+.image-data .image-desc
+{
+	margin-left: 2px;
+	width:	270px;
+}
+
+.image-button-group
+{
+	margin-top: 31px;
+	display: none;
+}
+
+.image-data .image-button-group button {
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 8px 50%;
+}
+    
+button.image-delete {
+	background-image: url(../images/delete.png);
+}
+    
+button.image-top {
+	background-image: url(../images/top.png);
+}
+
+button.image-bottom {
+	background-image: url(../images/bottom.png);
+}
+
+#images button.image-undelete {
+	padding-left: 30px;
+	background: url(../images/undo.png) 8px 50% no-repeat;
+}
+
+#images button.initially-hidden {
+	display: none;
+}
+
+#upload_btn button {
+	padding-left: 30px;
+	background: url(../images/add.png) 8px 50% no-repeat;
+	min-height: 2em;
+}
+
+#controls {
+	width: 200px;
+	padding-top: 10px;
+	vertical-align: top;
+	visibility: hidden;
+	float: right;
+}
+
+#controls hr
+{
+	margin-right: 33px;
+}
+
+#controls button {
+	width: 160px;
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 8px 50%;
+}
+
+.converting-button { 
+	min-height: 2em;
+}
+
+#save button {
+	background-image: url(../images/save.png);
+}
+
+#save button[disabled] {
+	background-image: url(../images/save_disabled.png);
+}
+
+#delete-all {
+	margin-top: 8px;
+}
+#delete-all button {
+	background-image: url(../images/delete.png);
+}
+
+.drag-text {
+	font-size: 0.85em;
+	color: #777;
+	float: right;
+	line-height: 26px;
+	margin-right: 13px;
+	cursor: move;
+}

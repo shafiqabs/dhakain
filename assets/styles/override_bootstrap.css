@@ -1,0 +1,9 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+/* -----------------Override css---------------------------*/
+
+input.span3, textarea.span3, .uneditable-input.span3 {
+    width: 250px;
+}

@@ -1,0 +1,62 @@
+* html body {
+	behavior: url(styles/csshover.htc);
+}
+
+div {
+	zoom: 0;	
+}
+
+#board-content ul li{list-style:none; float:left; padding-left:10px;}
+
+.top-navigation ul li.last-child {
+	padding: 0;
+	background-image: url("../images/navigation.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    float: left;
+	width:117px;
+    
+}
+
+
+.top-navigation ul li:last-child {
+	padding: 0;
+	background-image: url("../images/navigation.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+    float: left;
+	width:117px;
+	
+}
+
+.top-navigation ul li a {
+    padding: 0 8px;
+
+}
+
+.top-navigation ul li.last:hover a {
+	padding-left: 8px;
+}
+
+.top-navigation ul li:hover a, .top-navigation ul li.selected a {
+   padding-right: 8px;
+
+}
+
+.top-navigation ul li.last-child:hover,.top-navigation ul li.last-child a:hover, {
+	background-image: url(../images/navigation-hover.png);
+	z-index: 20;
+	color:#0066A4;
+	
+}
+
+.header .top-li ul li a img{ background-position:left 2px; vertical-align: middle;}
+
+#y_search_field{
+	height:23px;
+	width:510px!important;
+	border:#CBCCCE 1px solid;
+	padding-left:2px;
+	line-height:23px;
+	float:left;
+}

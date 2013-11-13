@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #0c396c;
+	line-height: 15px;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+#divarea{width:100%;} 
+
+.page_list_title{ height:20px; width:558px; padding-left:6px; background:#d4dde6; padding-bottom:2px; padding-top:6px; font-weight:bold; border-top:2px solid #006699; border-bottom:2px solid #006699;}
+.content .page_title_text{ width:250px; float:left; padding-left:15px; font-weight:bold; float:left; }
+
+.page_list_field{ height:17px; width:558px; background:#fff; padding-bottom:2px; padding-top:6px; border-bottom:1px solid #999999; font-family:Arial, Helvetica, sans-serif; font-size:11px;}
+.page_list_text{ width:250px; float:left; padding-left:15px;float:left; text-transform:capitalize;}
+
+.fileUploadQueueItem {
+	font: 11px Verdana, Geneva, sans-serif;
+	background-color: #F5F5F5;
+	border: 3px solid #E5E5E5;
+	margin-top: 5px;
+	padding: 10px;
+	width: 210px;
+	float:left;
+	margin-left:28px;
+}
+.fileUploadQueueItem .cancel {
+	float: right;
+}
+.fileUploadProgress {
+	background-color: #FFFFFF;
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+	border-right: 1px solid #C5C5C5;
+	border-bottom: 1px solid #C5C5C5;
+	margin-top: 10px;
+	width: 100%;
+}
+.fileUploadProgressBar {
+	background-color: #0099FF;
+}
+ #photo_area{width:558px; margin-left:1px; border:#006699 2px solid}
+ #photo_area_title{height:30px; margin-bottom:20px; width:558px; background:#f1ede8; 
+   font-weight:700;}
+ .photo_area_title_bootom{width:530px; float: left; padding-top:5px; text-align:left; padding-left:10px;}
+ 
+ /*################### Start Scroll bar################################*/
+ 
+ .jScrollPaneContainer {
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+}
+.jScrollPaneTrack {
+	background-image:url(images/scroll/bg.gif);
+	background-repeat:repeat-y;
+	cursor:pointer;
+	height:100%;
+	position:absolute;
+	right:0pt;
+	top:0pt;
+	width:15px;
+	z-index:10000;
+}
+.jScrollPaneDrag {
+	background-image:url(images/scroll/scroll.gif);
+	background-repeat:repeat-y;
+	cursor:pointer;
+	margin-left:1px;
+	overflow:hidden;
+	position:absolute;
+	width:9px;
+}
+.jScrollPaneDragTop {
+	left:0pt;
+	overflow:hidden;
+	position:absolute;
+	top:0pt;
+}
+.jScrollPaneDragBottom {
+	bottom:0pt;
+	left:0pt;
+	overflow:hidden;
+	position:absolute;
+}
+a.jScrollArrowUp {
+	background-image:url(images/scroll/up.gif);
+	background-repeat:no-repeat;
+	display:block;
+	height:9px;
+	overflow:hidden;
+	position:absolute;
+	right:0pt;
+	text-indent:-2000px;
+	top:0pt;
+	width:5px;
+	z-index:1;
+}
+a.jScrollArrowUp:hover {
+}
+a.jScrollArrowDown {
+	background-image:url(images/scroll/down.gif);
+	background-repeat:no-repeat;
+	bottom:0pt;
+	display:block;
+	height:10px;
+	overflow:hidden;
+	position:absolute;
+	right:0pt;
+	text-indent:-2000px;
+	width:5px;
+	z-index:1;
+}
+a.jScrollArrowDown:hover {
+}
+a.jScrollActiveArrowButton, a.jScrollActiveArrowButton:hover {
+}
+
+ /*################### Start Scroll bar################################*/

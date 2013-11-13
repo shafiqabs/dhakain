@@ -1,0 +1,154 @@
+<?php $this->load->view('admin/layouts/header')?>
+<ul id="breadcrumbs">
+  <li><div id="home"><?php echo $this->lang->line('home'); ?></div><a href="<?php echo site_url();?>" id="first-bread"><?php echo $this->lang->line('home'); ?></a></li>
+  <li><a href="<?php echo site_url($this->uri->segment(1,0));?>" ><?php echo $this->uri->segment(1,0); ?></a></li>
+  <li><a href="<?php echo site_url($this->uri->segment(1,0).'/'.$this->uri->segment(2,0).'/'.$this->uri->segment(3,0));?>" ><?php echo $title; ?></a></li>
+  <li><?php echo $store_name; ?>'info</li>
+  <li id="breadcrumb-right"><button class="btn  btn-info" id="add_mall" data-toggle="modalx" href="#shoppingmallModal" ><i class="icon-edit icon-white"></i><?php echo $this->lang->line('add_mall'); ?></button></li>
+</ul>
+
+<div class="clear"></div>   
+<div id="content-box-container">
+<table style="height:100%;">
+<tbody>
+<tr><td height="20"></td></tr>
+<tr>
+<td  valign="top" id="bnc">
+<?php $this->load->view('admin/layouts/top_menu')?>
+<div id="wptouch-tabbed-area" class="round-6 box-shadow persist-area" ><!-- Start box -->
+<div class="content-box">
+<div class="left-area">
+<?php $this->load->view('admin/layouts/left_menu'); ?>
+</div>
+
+<div class="right-area ">
+    <div class="submit-bar persist-header" >
+    <div id="message-box"><?php $this->load->view('admin/layouts/message'); ?></div>
+    </div>
+  <div class="info_message">
+    <h4 class="alert-heading" style="text-align: center"><?php echo $store_name; ?></h4>
+  </div>
+<fieldset class="sheet">
+<div class="clear"></div>
+<legend><?php echo $title; ?></legend>
+<?php $this->load->view('admin/layouts/breadcrumbs'); ?>
+<div class="clear"></div>
+<div class="content-inner-box">
+<table id="flexPaging" style="display:block"></table>
+</div>
+</fieldset>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- end of sidebar -->
+<!-- end of content -->
+</div><!-- end of main -->
+<?php $this->load->view('admin/layouts/footer'); ?>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    $("#flexPaging").flexigrid
+    (
+       {
+                      url: '<?php echo site_url('shoppingmall/mall/'.$accessFun)?>',
+                      dataType: 'json',
+                      colModel : [<?php echo $colModel; ?>],
+                      buttons : [
+                        {name: 'ALL', onpress: sortAlpha},
+                        {name: 'A', onpress: sortAlpha},
+                        {name: 'B', onpress: sortAlpha},
+                        {name: 'C', onpress: sortAlpha},
+                        {name: 'D', onpress: sortAlpha},
+                        {name: 'E', onpress: sortAlpha},
+                        {name: 'F', onpress: sortAlpha},
+                        {name: 'G', onpress: sortAlpha},
+                        {name: 'H', onpress: sortAlpha},
+                        {name: 'I', onpress: sortAlpha},
+                        {name: 'J', onpress: sortAlpha},
+                        {name: 'K', onpress: sortAlpha},
+                        {name: 'L', onpress: sortAlpha},
+                        {name: 'M', onpress: sortAlpha},
+                        {name: 'N', onpress: sortAlpha},
+                        {name: 'O', onpress: sortAlpha},
+                        {name: 'P', onpress: sortAlpha},
+                        {name: 'Q', onpress: sortAlpha},
+                        {name: 'R', onpress: sortAlpha},
+                        {name: 'S', onpress: sortAlpha},
+                        {name: 'T', onpress: sortAlpha},
+                        {name: 'U', onpress: sortAlpha},
+                        {name: 'V', onpress: sortAlpha},
+                        {name: 'W', onpress: sortAlpha},
+                        {name: 'X', onpress: sortAlpha},
+                        {name: 'Y', onpress: sortAlpha},
+                        {name: 'Z', onpress: sortAlpha},
+                        {name: '#', onpress: sortAlpha}
+
+                      ],
+                      searchitems : [<?php echo $searchitems; ?>],
+                      sortname: "<?php echo $sortname; ?>",
+                      sortorder: "<?php echo $sortorder; ?>",
+                      usepager: <?php echo $usepager; ?>,
+                      title: '<?php echo $title; ?>',
+                      useRp: true,
+                      rp: <?php echo $rp; ?>,
+                      showTableToggleBtn: false,
+                      resizable: false,
+                      showToggleBtn: false,
+                      width: 750,
+                      onSubmit: sortAlpha('e'),
+                      height: 'auto'
+       }
+    );
+
+
+        $("#flexPaging").delegate(".mall-status", "click", function() {
+            var url=$(this).prop('rel');
+            var agentID=$(this).prop('id');
+            $.ajax({
+              dataType:'json',
+              url:url,
+              data:'',
+              type: "GET",
+              cache: false,
+              success: function(val){
+                $('#shop-'+agentID).removeClass(val.removeClass);
+                $('#shop-'+agentID).addClass(val.addClass);
+
+              }
+            })
+        })
+
+      $("#flexPaging").delegate(".delete", "click", function() {
+        var url=$(this).prop('rel');
+        var agentID=$(this).prop('id');
+        $.ajax({
+          dataType:'json',
+          url:url,
+          data:'',
+          type: "GET",
+          cache: false,
+          success: function(val){
+            if(val.success=='success'){
+              $('#row'+agentID).hide();
+            }
+
+          }
+        })
+      })
+
+
+});
+function sortAlpha(com)
+{
+    var dtx =[{name: "letter_pressed",value: com}];
+    $("#flexPaging").flexOptions({params: dtx});
+    $("#flexPaging").flexReload();
+}
+</script>

@@ -1,0 +1,148 @@
+/* Copyright (c) 2008, Experion Inc.  All rights reserved. */
+
+.next-to-controls {
+	width: 625px;
+	float: left;
+}
+
+#controls {
+	width: 130px;
+	padding-top: 10px;
+	vertical-align: top;
+	visibility: hidden;
+	float: right;
+}
+
+#controls hr
+{
+	margin-right: 13px;
+}
+
+#controls button {
+	width: 110px;
+	padding-left: 30px;
+}
+
+.converting-button { 
+	min-height: 2em;
+}
+
+#btn-add button {
+	background: url(../../images/add.png) 8px 50% no-repeat;
+}
+
+#btn-save button {
+	background: url(../../images/save.png) 8px 50% no-repeat;
+}
+
+#btn-save button[disabled] {
+	background-image: url(../../images/save_disabled.png);
+}
+
+#room-template {
+	display: none;
+}
+
+#rooms {
+	position: relative;
+	width: 625px;
+	float: left;
+}
+
+.room {
+	clear: left;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	border-width: 1px 0px;
+	position: relative;
+	margin: 8px 1px;
+	width: 620px;
+}
+
+.room-inner {
+	margin: 0px -1px;
+	border: 1px solid #ccc;
+	border-width: 0px 1px;
+	padding: 5px;
+}
+
+.room input,
+.room select {
+	width: auto;
+	margin-right: 5px;
+}
+
+.features, .room-info {
+	border: none;
+	border-collapse: collapse;
+	padding: 0;
+	margin: 0;
+}
+
+.features th, .features td {
+	border: none;
+	vertical-align: top;
+	text-align: left;
+	font-weight: normal;
+}
+
+.room-info td {
+	border: none;
+	padding: 2px;
+	white-space: nowrap;
+}
+
+.room-info .errors td {
+	white-space: normal;
+}
+
+.features input {
+	display: block;
+	margin-bottom: 4px;
+	width: 360px;
+}
+
+.errors td {
+	font-size: 0.85em;
+	color: red;
+}
+
+#rooms .buttons button {
+	padding-left: 30px;
+	background-repeat: no-repeat;
+	background-position: 8px 50%;
+}
+    
+button.delete {
+	background-image: url(../../images/delete.png);
+}
+
+button.add {
+	background-image: url(../../images/add.png);
+}
+    
+button.undelete {
+	background-image: url(../../images/undo.png);
+}
+
+.buttons {
+	padding: 20px 0 0 30px;
+}
+
+#rooms .deleted .room {
+	background-color: #fee !important;
+}
+
+#rooms .modified .room {
+	background-color: #ee8;
+}
+
+#rooms .sel-sz {
+	width: 3.6em;
+}
+#rooms .sel-room {
+	width: 15.5em;
+}
+#rooms .sel-level {
+	width: 12em;
+}

@@ -1,0 +1,21 @@
+* html body {
+	behavior: url(styles/csshover.htc);
+}
+
+div {
+	zoom: 0;	
+}
+
+.content .preview img {
+
+}
+
+.left-area ul li a.active {
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    color: #D54E21;
+    margin:0px;
+    padding-left: 10px;
+    position: relative;
+    z-index: 2;
+}

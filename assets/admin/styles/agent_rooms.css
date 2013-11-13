@@ -1,0 +1,178 @@
+.controls{
+text-align:right;
+width:130px;
+float:right;
+margin:25px 0px 0px 0px;
+margin-bottom:20px;
+}
+
+.room{
+clear:left;
+background-color:#eeeeee;
+border:1px solid #cccccc;
+border-width:1px 0px;
+position:relative;
+margin:8px 1px;
+width:625px;
+margin-left:10px;
+
+
+}
+
+.room-inner{
+margin:0px -1px;
+border:1px solid #ccc;
+border-width:0px 1px;
+padding:5px;
+}
+
+.control_button{
+margin:10px 20px 0px 0px;
+float:right;
+background-repeat:no-repeat;
+border:1px #999999 solid;
+height:25px;
+width:100px;
+background:url('../../images/add-list.jpg');
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+}
+
+.control_button_box{
+margin:10px 20px 0px 0px;
+float:right;
+background-repeat:no-repeat;
+border:1px #999999 solid;
+height:25px;
+width:90px;
+background:url('../../images/add-list.jpg');
+text-align:center;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+}
+
+.control_button:hover,.control_button_box:hover,.control_button_imagebox:hover{
+background-image:url('../../images/button-hover.jpg');
+}
+
+#save_rooms{
+background:url('../../images/save.png') no-repeat 5px 5px;
+height:25px;
+width:100px;
+border:none;
+font-size:11px;
+}
+
+#add_rooms{
+background:url('../../images/add.png') no-repeat 5px 5px;
+height:25px;
+width:100px;
+border:none;
+font-size:11px;
+}
+
+.delete{
+background:url('../../images/delete.png') no-repeat 5px 5px;
+height:25px;
+width:90px;
+border:none;
+font-size:11px;
+}
+
+.undelete{
+background:url('../../images/undo.png') no-repeat 5px 5px;
+height:25px;
+width:90px;
+border:none;
+font-size:11px;
+}
+
+.control_button_imagebox{
+margin:28px 20px 0px 0px;
+float:right;
+background-repeat:no-repeat;
+border:1px #999999 solid;
+height:25px;
+width:80px;
+background:url('../../images/add-list.jpg');
+text-align:center;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+}
+
+.room_image{
+border:1px solid #777777;
+}
+
+.img_order{
+background:transparent;
+width:15px;
+float:right;
+border:none;
+margin:0px 0px 0px 30px;
+}
+
+.drag_img{
+float:right;
+cursor:move;
+color:#999999;
+font-size:11px;
+margin-top:38px;
+}
+
+#add_gallery{
+background:url('../../images/add.png') no-repeat 5px 5px;
+height:25px;
+width:100px;
+border:none;
+font-size:11px;
+}
+
+#save_gallery{
+background:url('../../images/save.png') no-repeat 5px 5px;
+height:25px;
+width:100px;
+border:none;
+font-size:11px;
+}
+
+#delete_all{
+background:url('../../images/delete.png') no-repeat 5px 5px;
+height:25px;
+width:100px;
+border:none;
+font-size:11px;
+}
+
+#undelete_all{
+background:url('../../images/undo.png') no-repeat 5px 5px;
+height:25px;
+width:100px;
+border:none;
+font-size:11px;
+}
+
+.image_top{
+background:url('../../images/up.png') no-repeat 5px 5px;
+height:25px;
+width:80px;
+border:none;
+font-size:11px;
+}
+
+.image_bottom{
+background:url('../../images/down.png') no-repeat 5px 5px;
+height:25px;
+width:80px;
+border:none;
+font-size:11px;
+}
+
+.level_error,.room_error{
+display:none;
+color:red;
+font-size:11px;
+font-weight:bold;
+}
+input{border:1px solid #8191A5;}
+select{border:1px solid #8191A5;}

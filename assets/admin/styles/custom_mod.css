@@ -1,0 +1,6 @@
+fieldset .input_line_mod{ width:700px;}
+fieldset .input_line .input_title_mod{ width:200px; line-height:11px; margin-left:150px;}
+#template_title{color:#286C99; font-weight:bold; background:#f4f5f8; padding-bottom:5px; padding-top:5px; margin-bottom:10px; border-bottom:1px solid #286C99;}
+.newrows{text-align:center; width:80px; margin-left:50px;}
+.input_line_double{clear:none!important; float:left; width:320px!important;}
+fieldset .input_line .input_title_noti{width:300px; text-align:left; margin-left:20px;}
